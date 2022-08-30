@@ -68,6 +68,13 @@ button{
     width: 25%;
     height: 50px;
 }
+nav{
+    background: white;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+
+}
 nav #about{
     color:green;
 }
@@ -108,4 +115,66 @@ h1::before{
     display: flex;
     flex-direction: column;
     background: aqua;
+}
+
+/* Psocionamiento */
+.posicion{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: relative;
+}
+.elemento{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    right: 0%;
+}
+ul p{
+  position: sticky;
+  top: 0%;  
+}
+
+/* Z index*/
+.tarjeta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.indexZ{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: absolute;
+    border-radius: 20px;
+    justify-content: center;
+    }
+.z5{
+    width: 100%;
+    height: 100px;
+    background: black;
+    position: absolute;
+    z-index: 2;
+    margin-top: 5%;
+    }
+.z5:hover{
+    background: pink;
+}
+.z4{
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    position: absolute;
+    z-index: 3;
+    margin-top: 20%;
+}
+.z6{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    position: absolute;
+    z-index: 2;
+    margin-top: 50%;
 }
