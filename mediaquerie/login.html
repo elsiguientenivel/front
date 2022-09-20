@@ -90,6 +90,39 @@ body{
         display: block;
     }
 }
+.signup-login{
+    
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    }
+        @media (max-width: 640px){
+        
+            .logo {
+                display: block;
+            }
+        
+            .signup-login {
+                width: 300px;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 24px;
+            }
+        }
+.forget-password{
+    display: flex;
+    justify-content: center;
+}
+.forgot{
+    color: var(--hospital-green);
+}
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -100,15 +133,17 @@ body{
         <div class="form-container">
             <img class="logo" src="/mediaquerie/Logos/logo_yard_sale.svg" alt="logo">
         
-            <h1 class="title"> Create a new password</h1>
-            <p class="subtitle"> Enter new password for you account</p>
             <form action="/" class="form">
-                <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="**********" class="input input-password">
-                <label for="new-password" class="label" > Repeat Password</label>
+                <label for="password" class="label">Email address</label>
+                <input type="password" id="password" placeholder="camilayakoo@gmail.com" class="input input-password">
+                <label for="new-password" class="label" >Password</label>
                 <input type="password" id="new-password" placeholder="**********" class="input input-password">
-                <input type="submit" value="Confirm" class="primary-button login-button">
+                <input type="submit" value="Log in" class="primary-button login-button">
             </form>
+            <p class="forget-password">
+                <span class="forgot">Forget my password</span>
+            </p>
+            <button class="signup-login"> Sign up</button>
         </div>
     </div>
 </body>
