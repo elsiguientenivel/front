@@ -124,6 +124,20 @@ body{
     color: var(--hospital-green);
     text-decoration: none;
 }
+.title-create{
+    margin-bottom: 30px;
+    font-size: var(--lg);
+    font-weight: bold;
+}
+@media (max-width: 640px){
+      
+        .primary-button {
+            width: 300px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 24px;
+        }
+    }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -132,19 +146,16 @@ body{
 <body>
     <div class="login">
         <div class="form-container">
-            <img class="logo" src="/mediaquerie/Logos/logo_yard_sale.svg" alt="logo">
-        
+            <span class="title-create">My account</span>
             <form action="/" class="form">
-                <label for="password" class="label">Email address</label>
-                <input type="password" id="password" placeholder="camilayakoo@gmail.com" class="input input-password">
+                <label for="name" class="create-name">Name</label>
+                <input id="input-name" placeholder="Camila Yokoo" class="input input-name">
+                <label for="name" class="create-email">Email</label>
+                <input id="input-email" placeholder="Camilayokoo@gmail.com" class="input input-mail">
                 <label for="new-password" class="label" >Password</label>
                 <input type="password" id="new-password" placeholder="**********" class="input input-password">
-                <input type="submit" value="Log in" class="primary-button login-button">
+                <input type="submit" value="Create" class="primary-button login-button">
             </form>
-            <p class="forget-password">
-                <a class="forgot" href="/"> Forget my password </a>
-            </p>
-            <button class="signup-login"> Sign up</button>
         </div>
     </div>
 </body>
